@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using StarcraftDemo4.Services;
 
 
 namespace StarcraftDemo4
@@ -284,6 +286,39 @@ namespace StarcraftDemo4
         } 
         #endregion
 
+        private static void DisplayGamesFromDatabase()
+        {
+            using (var recorder = new GameRecorder())
+            {
+                var games = recorder.GetAllGames();
+                Console.WriteLine($"\nFound {games.Count} games in database:");
+                
+                foreach (var game in games.Take(5)) // Show last 5 games
+                {
+                    Console.WriteLine($"Game {game.GameId}: Started {game.StartTime}");
+                    Console.WriteLine($"  Duration: {game.TotalGameTime} seconds");
+                    Console.WriteLine($"  Final Resources: {game.FinalMinerals} minerals, {game.FinalGas} gas");
+                    Console.WriteLine($"  Final Units: {game.FinalUnitCount}/{game.FinalUnitCap}");
+                    
+                    // Show first few moves
+                    var gameWithSteps = recorder.GetGameWithSteps(game.GameId);
+                    if (gameWithSteps?.GameSteps?.Any() == true)
+                    {
+                        Console.WriteLine($"  Total Steps: {gameWithSteps.GameSteps.Count}");
+                        foreach (var step in gameWithSteps.GameSteps.Take(3))
+                        {
+                            Console.WriteLine($"    Step {step.StepNumber}: {step.MoveDescription} (Time: {step.GameTimeAtStep})");
+                        }
+                        if (gameWithSteps.GameSteps.Count > 3)
+                        {
+                            Console.WriteLine($"    ... and {gameWithSteps.GameSteps.Count - 3} more steps");
+                        }
+                    }
+                    Console.WriteLine();
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("StarCraft Demo 4 - Build Order Simulator");
@@ -291,7 +326,12 @@ namespace StarcraftDemo4
             
             GameOptimizer.PlayBaseGames(3);
             
-            Console.WriteLine("Simulation complete! Press any key to exit...");
+            Console.WriteLine("Simulation complete!");
+            
+            // Display games from database
+            DisplayGamesFromDatabase();
+            
+            Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
     }

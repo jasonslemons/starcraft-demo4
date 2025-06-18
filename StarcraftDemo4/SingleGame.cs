@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization.Formatters.Binary;
+using StarcraftDemo4.Services;
 
 
 namespace StarcraftDemo4
@@ -12,6 +13,7 @@ namespace StarcraftDemo4
     {
         public static string str;
         public List<Move> MovesPlayed = new List<Move>();
+        private GameRecorder gameRecorder;
         public static void SendString(string str)
         {
             if (State.verbose)
@@ -216,16 +218,30 @@ namespace StarcraftDemo4
 
         public State ReplayGame(AutoPlayer person, List<Move> Moves)
         {
+            gameRecorder = new GameRecorder();
+            gameRecorder.StartNewGame();
+            
             foreach (Move mv in Moves)
             {
                 MakeMove(person, mv);
                 MovesPlayed.Add(mv);
+                
+                // Record the move to database
+                gameRecorder.RecordGameStep(mv, person.myState);
             }
+            
+            // Finish recording the game
+            gameRecorder.FinishGame(person.myState);
+            gameRecorder.Dispose();
+            
             return person.myState;
         }
 
         public State PlayAutoGame(AutoPlayer person)
         {
+            gameRecorder = new GameRecorder();
+            gameRecorder.StartNewGame();
+            
             //MovesPlayed = new List<Move>();
             Random random = new Random();
             while (person.myState.totalTime < AutoPlayer.THRESH)
@@ -243,7 +259,15 @@ namespace StarcraftDemo4
                 SendString(" my move is " + thisMove.str);
                 // Make thismove
                 MakeMove(person, thisMove);
+                
+                // Record the move to database
+                gameRecorder.RecordGameStep(thisMove, person.myState);
             }
+            
+            // Finish recording the game
+            gameRecorder.FinishGame(person.myState);
+            gameRecorder.Dispose();
+            
             return person.myState;
         }
 
