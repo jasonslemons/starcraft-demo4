@@ -1,0 +1,52 @@
+# Build Outputs
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio Files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.sln.iml
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+packages/
+*.nupkg
+.nuget/
+
+# Entity Framework
+*.edmx.diagram
+
+# Web publish profiles
+PublishProfiles/
+*.pubxml
+*.pubxml.user
+
+# Other
+*.log
+*.cache
+Thumbs.db
+Desktop.ini

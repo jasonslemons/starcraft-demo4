@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StarcraftDemo4.Addon" Collapsed="true">
+    <Position X="15.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAEAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Addon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.TechLab" Collapsed="true">
+    <Position X="12.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Addon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Reactor" Collapsed="true">
+    <Position X="14.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Addon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.OrbitalCommand" Collapsed="true">
+    <Position X="16.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Addon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.PlanetaryFortress" Collapsed="true">
+    <Position X="19" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Addon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.EngineeringBay" Collapsed="true">
+    <Position X="22.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_PS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.GhostAcademy" Collapsed="true">
+    <Position X="28.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_PS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Armory" Collapsed="true">
+    <Position X="30" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_PS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.FusionCore" Collapsed="true">
+    <Position X="31.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_PS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.CommandCenter" Collapsed="true">
+    <Position X="33.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACEAAAAAAAAAEAAAAAAAAAAAAgAAAAAAEAAAAAAA=</HashCode>
+      <FileName>All_PS_children.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarcraftDemo4.Barracks" Collapsed="true">
+    <Position X="22.5" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_XPS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Factory" Collapsed="true">
+    <Position X="24.75" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_XPS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Starport" Collapsed="true">
+    <Position X="27" Y="11.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>All_XPS_children.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.AutoPlayer" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAQQiQAQAQQAhwAAFCEABAAAgAAEAAAQAAAAEAEACA=</HashCode>
+      <FileName>AutoPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ExtendableProducingStructure" Collapsed="true">
+    <Position X="25.5" Y="10.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAEAAAACAA=</HashCode>
+      <FileName>ExtendableProducingStructure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarcraftDemo4.GameOptimizer" Collapsed="true">
+    <Position X="41.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameOptimizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SC2ResultsGamesEntities" Collapsed="true">
+    <Position X="41.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Game" Collapsed="true">
+    <Position X="39.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Result" Collapsed="true">
+    <Position X="39.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAwAAAEAAAIAEEAAIAABAAAUAAAAAAAAQAEQA=</HashCode>
+      <FileName>Result.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Player" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACMCAAAAAACIIAAACABAAQBAAgCACAAIkAAAAAAE=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ProducingStructure" Collapsed="true">
+    <Position X="27" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAQAAAAAAAgAAAAAgAAAAAAgAAAAAAECAAAAAA=</HashCode>
+      <FileName>ProducingStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Recorder" Collapsed="true">
+    <Position X="38" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAEAAQAAAAAACAAAAAAAASAAAAAEAMIABAAAA=</HashCode>
+      <FileName>Recorder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SingleGame" Collapsed="true">
+    <Position X="38" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAQAAAiAAAAIgAgAAAAA=</HashCode>
+      <FileName>SingleGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.State" Collapsed="true">
+    <Position X="39.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAZAiAEgABAQABECARAAACAAAQAQQGgABkIkAAAAQAA=</HashCode>
+      <FileName>State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.CantBuildException" Collapsed="true">
+    <Position X="37.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Structure" Collapsed="true">
+    <Position X="20.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAARAAAAAAAAAAAAAAAMACAAEAIEAAAAAAA=</HashCode>
+      <FileName>Structure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarcraftDemo4.SupplyDepot" Collapsed="true">
+    <Position X="17.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Bunker" Collapsed="true">
+    <Position X="19.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Turret" Collapsed="true">
+    <Position X="22" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SensorTower" Collapsed="true">
+    <Position X="24.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Refinery" Collapsed="true">
+    <Position X="30" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Test" Collapsed="true">
+    <Position X="41.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABAAAAAAAAAAAAAAAAAIAAAAAgAAACAEAABAAACAA=</HashCode>
+      <FileName>Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Unit" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAkRAAARAAAAABAAAAAMAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarcraftDemo4.EnergyUnit" Collapsed="true">
+    <Position X="25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Mule" Collapsed="true">
+    <Position X="25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SCV" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Marine" Collapsed="true">
+    <Position X="9" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Marauder" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Reaper" Collapsed="true">
+    <Position X="16" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Ghost" Collapsed="true">
+    <Position X="17.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Hellion" Collapsed="true">
+    <Position X="19.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SiegeTank" Collapsed="true">
+    <Position X="21.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Thor" Collapsed="true">
+    <Position X="23.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Viking" Collapsed="true">
+    <Position X="26.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Medivac" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Raven" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Banshee" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Battlecruiser" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Unit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.Upgrade" Collapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAARAAAAAAAAABAAAAAMAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StarcraftDemo4.InfantryWeaponsLvl1" Collapsed="true">
+    <Position X="22" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.InfantryWeaponsLvl2" Collapsed="true">
+    <Position X="26.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.InfantryWeaponsLvl3" Collapsed="true">
+    <Position X="30.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.VehicleWeaponsLvl1" Collapsed="true">
+    <Position X="34.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.VehicleWeaponsLvl2" Collapsed="true">
+    <Position X="38.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.VehicleWeaponsLvl3" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ShipWeaponsLvl1" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ShipWeaponsLvl2" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ShipWeaponsLvl3" Collapsed="true">
+    <Position X="14.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.InfantryArmorLvl1" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.InfantryArmorLvl2" Collapsed="true">
+    <Position X="23.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.InfantryArmorLvl3" Collapsed="true">
+    <Position X="27.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.VehiclePlatingLvl1" Collapsed="true">
+    <Position X="31.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.VehiclePlatingLvl2" Collapsed="true">
+    <Position X="35.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.VehiclePlatingLvl3" Collapsed="true">
+    <Position X="39.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ShipPlatingLvl1" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ShipPlatingLvl2" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ShipPlatingLvl3" Collapsed="true">
+    <Position X="12.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.NitroPacks" Collapsed="true">
+    <Position X="15.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.HiSecAutoTracking" Collapsed="true">
+    <Position X="20" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.StrikeCannons" Collapsed="true">
+    <Position X="24.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.CloakingField" Collapsed="true">
+    <Position X="28.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.ConcussiveShells" Collapsed="true">
+    <Position X="32.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.PersonalCloaking" Collapsed="true">
+    <Position X="36.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SeekerMissile" Collapsed="true">
+    <Position X="40.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.SiegeTech" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.StimPacks" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.WeaponRefit" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.BehemothReactor" Collapsed="true">
+    <Position X="17.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.CaduceusReactor" Collapsed="true">
+    <Position X="21" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.CorvidReactor" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.MoebiusReactor" Collapsed="true">
+    <Position X="29.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.BuildingArmor" Collapsed="true">
+    <Position X="33.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.CombatShield" Collapsed="true">
+    <Position X="37.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.DurableMaterials" Collapsed="true">
+    <Position X="41.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.InfernalPreIgniter" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarcraftDemo4.NeosteelFrame" Collapsed="true">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Upgrade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="StarcraftDemo4.Move" Collapsed="true">
+    <Position X="38" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAACAIAAAAAAAAAAA=</HashCode>
+      <FileName>AutoPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="StarcraftDemo4.IBuildable" Collapsed="true">
+    <Position X="39.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="StarcraftDemo4.IAddon" Collapsed="true">
+    <Position X="38" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="StarcraftDemo4.Structure_Name" Collapsed="true">
+    <Position X="38" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAACEIAAAAAAMAAIAAAAgBAAAGABEAAAMAAIEAA=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StarcraftDemo4.Units_Name" Collapsed="true">
+    <Position X="39.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAQEAgAKAABAAAAAAAQAAAQAQEEABAgAAA=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="StarcraftDemo4.Upgrade_Name" Collapsed="true">
+    <Position X="41.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgYAIMAAoAAAAWgAAEAAAEZyAMGAIBBAAGAAAJAAAQA=</HashCode>
+      <FileName>Interface.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SC2ResultsGamesModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SC2ResultsGamesModelStoreContainer">
+          <EntitySet Name="Games" EntityType="SC2ResultsGamesModel.Store.Games" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Results" EntityType="SC2ResultsGamesModel.Store.Results" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Games">
+          <Key>
+            <PropertyRef Name="Keyy" />
+          </Key>
+          <Property Name="Keyy" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GameId" Type="int" Nullable="false" />
+          <Property Name="Move" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Results">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="int" Nullable="false" />
+          <Property Name="Minerals" Type="int" Nullable="false" />
+          <Property Name="Gas" Type="int" Nullable="false" />
+          <Property Name="Marines" Type="int" Nullable="false" />
+          <Property Name="Marauder" Type="int" Nullable="false" />
+          <Property Name="SCV" Type="int" Nullable="false" />
+          <Property Name="Time" Type="int" Nullable="false" />
+          <Property Name="Refinery" Type="int" Nullable="false" />
+          <Property Name="CommandCenter" Type="int" Nullable="false" />
+          <Property Name="Barracks" Type="int" Nullable="false" />
+          <Property Name="TechLab" Type="int" Nullable="false" />
+          <Property Name="Reactor" Type="int" Nullable="false" />
+          <Property Name="SupplyDepot" Type="int" Nullable="false" />
+          <Property Name="MoveList" Type="varbinary(max)" Nullable="false" />
+        </EntityType>
+        <Function Name="pInsGame" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="GameId" Type="int" Mode="In" />
+          <Parameter Name="Move" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="pInsResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="GameId" Type="int" Mode="In" />
+          <Parameter Name="Minerals" Type="int" Mode="In" />
+          <Parameter Name="Gas" Type="int" Mode="In" />
+          <Parameter Name="Marines" Type="int" Mode="In" />
+          <Parameter Name="Marauder" Type="int" Mode="In" />
+          <Parameter Name="SCV" Type="int" Mode="In" />
+          <Parameter Name="Time" Type="int" Mode="In" />
+          <Parameter Name="Refinery" Type="int" Mode="In" />
+          <Parameter Name="CommandCenter" Type="int" Mode="In" />
+          <Parameter Name="Barracks" Type="int" Mode="In" />
+          <Parameter Name="TechLab" Type="int" Mode="In" />
+          <Parameter Name="Reactor" Type="int" Mode="In" />
+          <Parameter Name="SupplyDepot" Type="int" Mode="In" />
+          <Parameter Name="MoveList" Type="varbinary(max)" Mode="In" />
+        </Function>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SC2ResultsGamesModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SC2ResultsGamesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Games" EntityType="SC2ResultsGamesModel.Game" />
+          <EntitySet Name="Results" EntityType="SC2ResultsGamesModel.Result" />
+        </EntityContainer>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="Keyy" />
+          </Key>
+          <Property Name="Keyy" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GameId" Type="Int32" Nullable="false" />
+          <Property Name="Move" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Result">
+          <Key>
+            <PropertyRef Name="GameId" />
+          </Key>
+          <Property Name="GameId" Type="Int32" Nullable="false" />
+          <Property Name="Minerals" Type="Int32" Nullable="false" />
+          <Property Name="Gas" Type="Int32" Nullable="false" />
+          <Property Name="Marines" Type="Int32" Nullable="false" />
+          <Property Name="Marauder" Type="Int32" Nullable="false" />
+          <Property Name="SCV" Type="Int32" Nullable="false" />
+          <Property Name="Time" Type="Int32" Nullable="false" />
+          <Property Name="Refinery" Type="Int32" Nullable="false" />
+          <Property Name="CommandCenter" Type="Int32" Nullable="false" />
+          <Property Name="Barracks" Type="Int32" Nullable="false" />
+          <Property Name="TechLab" Type="Int32" Nullable="false" />
+          <Property Name="Reactor" Type="Int32" Nullable="false" />
+          <Property Name="SupplyDepot" Type="Int32" Nullable="false" />
+          <Property Name="MoveList" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SC2ResultsGamesModelStoreContainer" CdmEntityContainer="SC2ResultsGamesEntities">
+          <EntitySetMapping Name="Games"><EntityTypeMapping TypeName="SC2ResultsGamesModel.Game"><MappingFragment StoreEntitySet="Games">
+            <ScalarProperty Name="Keyy" ColumnName="Keyy" />
+            <ScalarProperty Name="GameId" ColumnName="GameId" />
+            <ScalarProperty Name="Move" ColumnName="Move" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Results"><EntityTypeMapping TypeName="SC2ResultsGamesModel.Result"><MappingFragment StoreEntitySet="Results">
+            <ScalarProperty Name="GameId" ColumnName="GameId" />
+            <ScalarProperty Name="Minerals" ColumnName="Minerals" />
+            <ScalarProperty Name="Gas" ColumnName="Gas" />
+            <ScalarProperty Name="Marines" ColumnName="Marines" />
+            <ScalarProperty Name="Marauder" ColumnName="Marauder" />
+            <ScalarProperty Name="SCV" ColumnName="SCV" />
+            <ScalarProperty Name="Time" ColumnName="Time" />
+            <ScalarProperty Name="Refinery" ColumnName="Refinery" />
+            <ScalarProperty Name="CommandCenter" ColumnName="CommandCenter" />
+            <ScalarProperty Name="Barracks" ColumnName="Barracks" />
+            <ScalarProperty Name="TechLab" ColumnName="TechLab" />
+            <ScalarProperty Name="Reactor" ColumnName="Reactor" />
+            <ScalarProperty Name="SupplyDepot" ColumnName="SupplyDepot" />
+            <ScalarProperty Name="MoveList" ColumnName="MoveList" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="StarCraftModel">
+        <EntityTypeShape EntityType="SC2ResultsGamesModel.Game" Width="1.5" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SC2ResultsGamesModel.Result" Width="1.5" PointX="2.75" PointY="0.75" Height="3.7109993489583326" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
