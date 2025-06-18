@@ -50,3 +50,6 @@ PublishProfiles/
 *.cache
 Thumbs.db
 Desktop.ini
+
+# Claude Code documentation
+CLAUDE.md
