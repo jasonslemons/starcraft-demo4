@@ -1,0 +1,118 @@
+@model GameEntity
+@{
+    ViewData["Title"] = $"Game {Model.GameId} Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Game Summary</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-4">Game ID:</dt>
+                    <dd class="col-sm-8">@Model.GameId</dd>
+
+                    <dt class="col-sm-4">Start Time:</dt>
+                    <dd class="col-sm-8">@Model.StartTime.ToString("yyyy-MM-dd HH:mm:ss")</dd>
+
+                    <dt class="col-sm-4">End Time:</dt>
+                    <dd class="col-sm-8">@(Model.EndTime?.ToString("yyyy-MM-dd HH:mm:ss") ?? "Not completed")</dd>
+
+                    <dt class="col-sm-4">Duration:</dt>
+                    <dd class="col-sm-8">@Model.TotalGameTime seconds</dd>
+
+                    <dt class="col-sm-4">Total Steps:</dt>
+                    <dd class="col-sm-8">@Model.GameSteps.Count</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5>Final Game State</h5>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-4">Minerals:</dt>
+                    <dd class="col-sm-8">@Model.FinalMinerals</dd>
+
+                    <dt class="col-sm-4">Gas:</dt>
+                    <dd class="col-sm-8">@Model.FinalGas</dd>
+
+                    <dt class="col-sm-4">Unit Count:</dt>
+                    <dd class="col-sm-8">@Model.FinalUnitCount</dd>
+
+                    <dt class="col-sm-4">Unit Cap:</dt>
+                    <dd class="col-sm-8">@Model.FinalUnitCap</dd>
+
+                    <dt class="col-sm-4">Supply Usage:</dt>
+                    <dd class="col-sm-8">
+                        @Model.FinalUnitCount/@Model.FinalUnitCap 
+                        <span class="badge bg-@(Model.FinalUnitCount >= Model.FinalUnitCap ? "danger" : "success")">
+                            @(Math.Round((double)Model.FinalUnitCount / Model.FinalUnitCap * 100, 1))%
+                        </span>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Recent Game Steps</h5>
+            </div>
+            <div class="card-body">
+                @if (Model.GameSteps?.Any() == true)
+                {
+                    <div class="table-responsive">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Step</th>
+                                    <th>Time</th>
+                                    <th>Action</th>
+                                    <th>Resources</th>
+                                    <th>Units</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var step in Model.GameSteps.OrderBy(s => s.StepNumber).Take(10))
+                                {
+                                    <tr>
+                                        <td>@step.StepNumber</td>
+                                        <td>@step.GameTimeAtStep</td>
+                                        <td>@step.MoveDescription</td>
+                                        <td>@step.MineralsAtStep min, @step.GasAtStep gas</td>
+                                        <td>@step.UnitCountAtStep/@step.UnitCapAtStep</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    @if (Model.GameSteps.Count > 10)
+                    {
+                        <p class="text-muted">Showing first 10 of @Model.GameSteps.Count steps.</p>
+                    }
+                    <a asp-action="Steps" asp-route-gameId="@Model.GameId" class="btn btn-primary">View All Steps</a>
+                }
+                else
+                {
+                    <p class="text-muted">No steps recorded for this game.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <a asp-action="Delete" asp-route-id="@Model.GameId" class="btn btn-danger">Delete Game</a>
+</div>

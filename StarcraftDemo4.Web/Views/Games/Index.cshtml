@@ -1,0 +1,91 @@
+@model IEnumerable<GameEntity>
+@{
+    ViewData["Title"] = "Search Games";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <form method="get" class="card">
+            <div class="card-body">
+                <h5 class="card-title">Search Filters</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="startDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control" id="startDate" name="startDate" value="@ViewBag.StartDate" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="endDate" class="form-label">End Date</label>
+                        <input type="date" class="form-control" id="endDate" name="endDate" value="@ViewBag.EndDate" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="minDuration" class="form-label">Min Duration (seconds)</label>
+                        <input type="number" class="form-control" id="minDuration" name="minDuration" value="@ViewBag.MinDuration" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="maxDuration" class="form-label">Max Duration (seconds)</label>
+                        <input type="number" class="form-control" id="maxDuration" name="maxDuration" value="@ViewBag.MaxDuration" />
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <a href="@Url.Action("Index")" class="btn btn-secondary">Clear</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        @if (Model?.Any() == true)
+        {
+            <h3>Games Found: @Model.Count()</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Game ID</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Duration</th>
+                            <th>Final Minerals</th>
+                            <th>Final Gas</th>
+                            <th>Final Units</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var game in Model)
+                        {
+                            <tr>
+                                <td>@game.GameId</td>
+                                <td>@game.StartTime.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                                <td>@(game.EndTime?.ToString("yyyy-MM-dd HH:mm:ss") ?? "N/A")</td>
+                                <td>@game.TotalGameTime seconds</td>
+                                <td>@game.FinalMinerals</td>
+                                <td>@game.FinalGas</td>
+                                <td>@game.FinalUnitCount/@game.FinalUnitCap</td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@game.GameId" class="btn btn-sm btn-primary">Details</a>
+                                    <a asp-action="Steps" asp-route-gameId="@game.GameId" class="btn btn-sm btn-info">Steps</a>
+                                    <a asp-action="Delete" asp-route-id="@game.GameId" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">
+                <h4>No games found</h4>
+                <p>Try adjusting your search criteria or run some simulations in the console application to generate game data.</p>
+            </div>
+        }
+    </div>
+</div>
