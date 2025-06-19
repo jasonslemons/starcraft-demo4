@@ -6,6 +6,7 @@
     <RootNamespace>StarcraftDemo4</RootNamespace>
     <AssemblyName>StarcraftDemo4</AssemblyName>
     <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>

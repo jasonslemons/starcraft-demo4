@@ -6,7 +6,7 @@ using StarcraftDemo4.Models;
 
 namespace StarcraftDemo4.Services
 {
-    public class GameRecorder
+    public class GameRecorder : IDisposable
     {
         private StarcraftDbContext _context;
         private GameEntity? _currentGame;

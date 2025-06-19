@@ -71,4 +71,5 @@ Use `GameRecorder.GetGameWithSteps(gameId)` to retrieve complete game histories 
 - **GameOptimizer**: Manages multiple game execution and results display
 - Console output includes database-retrieved game summaries after simulation completion
 
- 
+## Other instructions	
+- at the end of a command that changes the code, try dotbuild to build the code and if you get an error try to fix the error and build again.  

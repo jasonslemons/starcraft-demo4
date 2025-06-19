@@ -50,3 +50,7 @@ PublishProfiles/
 *.cache
 Thumbs.db
 Desktop.ini
+
+# Configuration files containing secrets
+appsettings.Development.json
+appsettings.Production.json

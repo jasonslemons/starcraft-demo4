@@ -8,7 +8,9 @@ builder.Services.AddControllersWithViews();
 
 // Add Entity Framework
 builder.Services.AddDbContext<StarcraftDbContext>(options =>
-    options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=StarcraftDemo4;Trusted_Connection=true;"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 
 var app = builder.Build();
 

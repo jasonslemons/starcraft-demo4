@@ -8,6 +8,10 @@ namespace StarcraftDemo4.Data
         public DbSet<GameEntity> Games { get; set; }
         public DbSet<GameStepEntity> GameSteps { get; set; }
 
+        public StarcraftDbContext() { }
+
+        public StarcraftDbContext(DbContextOptions<StarcraftDbContext> options) : base(options) { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

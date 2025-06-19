@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarcraftDemo4", "StarcraftDemo4\StarcraftDemo4.csproj", "{6C694007-4E85-4745-BD8B-AE2735348FB6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarcraftDemo4.Web", "StarcraftDemo4.Web\StarcraftDemo4.Web.csproj", "{D7DB7E0E-D0EA-E24C-699E-74F5D2ECE944}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{6C694007-4E85-4745-BD8B-AE2735348FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C694007-4E85-4745-BD8B-AE2735348FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C694007-4E85-4745-BD8B-AE2735348FB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7DB7E0E-D0EA-E24C-699E-74F5D2ECE944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7DB7E0E-D0EA-E24C-699E-74F5D2ECE944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7DB7E0E-D0EA-E24C-699E-74F5D2ECE944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7DB7E0E-D0EA-E24C-699E-74F5D2ECE944}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5C5DB4B-FA89-4735-B70F-2E582F78470A}
 	EndGlobalSection
 EndGlobal
